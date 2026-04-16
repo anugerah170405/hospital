@@ -1,0 +1,359 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.logo{
+  color: white;
+  font-size: 20px;
+}
+
+.primary-btn{
+  background: #c9e89b;
+  color: #1f6b63;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 26px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+/* NAVBAR */
+.nav-bar {
+  background: #1f6b63;
+  padding: 20px 0;
+}
+
+.nav-bar-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu-list a {
+  color: #dcefe9;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  background: #1f6b63;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%;
+  gap: 40px;
+}
+
+/* LEFT */
+.r-container {
+  flex: 1;
+  color: white;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #c7e3dc;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+/* INPUT */
+.input-wrapper {
+  display: flex;
+  background: #2a7a71;
+  padding: 8px;
+  border-radius: 50px;
+  width: 420px;
+  margin-bottom: 50px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  padding: 12px;
+}
+
+.input-wrapper input::placeholder {
+  color: #c7e3dc;
+}
+
+.input-wrapper button {
+  background: #c9e89b;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MINI CARDS */
+.card-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.mini-card span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mini-card p {
+  font-size: 14px;
+  color: #c7e3dc;
+}
+
+/* RIGHT IMAGE */
+.l-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cover {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+}
+
+
+/* GENERAL */
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+/* ABOUT */
+.about .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #555;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* SERVICE */
+.service {
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 280px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;        /* kunci tinggi */
+  object-fit: cover;    /* biar gak gepeng */
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 10px;
+}
+
+/* ========================= */
+/* TABLET (<= 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .r-container {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .input-wrapper {
+    margin-inline: auto;
+  }
+
+  .card-wrapper {
+    justify-content: center;
+  }
+
+  .about .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-cards {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* ========================= */
+/* MOBILE (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .menu {
+    display: none; /* nanti bisa kamu upgrade jadi hamburger */
+  }
+
+  .primary-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .input-wrapper input {
+    font-size: 14px;
+  }
+
+  .input-wrapper button {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* IMAGE */
+  .cover {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  /* ABOUT */
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  /* SERVICE */
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* CONTACT */
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
